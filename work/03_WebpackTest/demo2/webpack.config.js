@@ -13,11 +13,14 @@ console.log(path.resolve(__dirname, 'dist'))
 
 module.exports = { // 配置对象
   // 入口
-  entry: './src/index.js', //入口js的相对路径
+  //entry: './src/index.js', //入口js的相对路径
+  entry: {
+    app: './src/index.js'
+  },
   // 出口
   output: {
     path: path.resolve(__dirname, 'dist'),   // 所有打包生成的资源的基本路径(绝对)
-    filename: 'static/js/bundle.js'
+    filename: 'static/js/[name].js'
   },
   // 模块加载器
   module: {
@@ -29,9 +32,10 @@ module.exports = { // 配置对象
       },
       // 处理图片
       {
-        test: /.(jpg|png|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
+        test: /\.(jpg|png|gif|svg)$/,
+        loader: 'url-loader',  // 依赖于file-loader
+        options: { // 一旦指定了options, 只能通过loader配置来指定loader, 且值只能是串
+          limit: 7000,
           name: 'static/img/[name].[ext]'  // [name]代表文件  [ext]代表文件扩展名
         }
       }
