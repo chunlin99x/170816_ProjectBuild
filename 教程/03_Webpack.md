@@ -178,9 +178,10 @@
           "build": "webpack",
         }
 
-# 5). 打包运行  
+# 5). 打包发布运行项目  
     npm run build
-    运行打包生成的页面
+    npm install -g serve
+    serve dist
 
 # 4. 实现live-reload
 ## 1). 下载依赖模块
