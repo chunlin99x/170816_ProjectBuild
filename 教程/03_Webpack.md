@@ -169,7 +169,6 @@
             new HtmlPlugin({
               template: 'index.html',
               filename: 'index.html',
-              inject: true
             })
           ]
         }
