@@ -81,7 +81,11 @@
         @base: yellow;
         .index1 { color: @base; }
         .index2 { color: green; }
-        
+    5. index.html
+       <link rel="stylesheet" href="css/bulit.min.css">
+       <div id="box1" class="index1">aaaaa</div>
+       <div id="box2" class="index2">ccccc</div>
+       <script type="text/javascript" src="js/built.min.js"></script>
 ## 3). gulp配置: gulpfile.js
     var gulp = require('gulp')
     var concat = require('gulp-concat')
