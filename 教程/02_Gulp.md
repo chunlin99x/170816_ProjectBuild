@@ -17,14 +17,14 @@
     gulp-load-plugins: 实现插件自动引入
 
 ## 3). gulp相关API
+    gulp.task(name, [deps], fn) 
+          	* 定义一个任务
 	gulp.src(filePath/pathArr)
     	* 指向指定路径的所有文件, 返回文件流对象
       	* 用于读取文件
     gulp.dest(dirPath/pathArr)
       	* 指向指定的所有文件夹
       	* 用于向文件夹中输出文件
-    gulp.task(name, [deps], fn) 
-      	* 定义一个任务
     gulp.watch()
       	* 监视文件的变化
 
@@ -136,6 +136,9 @@
     2. 配置
         var connect = require('gulp-connect')
         var open = require('open')
+        
+        // 所有任务最后都加上
+        .pipe(connect.reload())
         
         //注册live-reload任务
         gulp.task('server',['default'], function () {
