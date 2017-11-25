@@ -16,8 +16,29 @@
     简化项目构建, 自动化完成构建
 
 # 3. grunt(了解)
+    前端自动化的打包工具
+    拥有很多强大的插件
+    配置文件名为: Gruntfile.js
     
 # 4. gulp(掌握-)
+    功能与grunt类似
+    拥有更多的插件, 打包速度更快
+    配置文件名为: gruntfile.js
+    可以实现live-reload
+    gulp对象常用API:
+        gulp.task()
+        gulp.src()
+        gulp.dest()
+        gulp.watch()
+    常用插件:
+        gulp-concat : 合并文件(js/css)
+        gulp-uglify : 压缩js文件
+        gulp-rename : 文件重命名
+        gulp-less : 编译less
+        gulp-clean-css : 压缩css
+        gulp-htmlmin: 压缩html
+        gulp-connect: 实现live-reload
+        gulp-load-plugins: 实现插件自动引入
 
 # 5. webpack(掌握)
 ## 1). webpack的理解
