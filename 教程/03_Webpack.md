@@ -186,6 +186,7 @@
 
 # 4. 实现live-reload
 ## 1). 下载依赖模块
+    npm install -g webpack-dev-server
     npm install --save-dev webpack-dev-server
     
 ## 2). 修改配置: package.json

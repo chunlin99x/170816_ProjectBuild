@@ -28,7 +28,7 @@ module.exports = { // 配置对象
       // 处理css
       {
         test: /\.css$/, // 配置css样式文件
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader']  // 数组右边的loader先被使用
       },
       // 处理图片
       {
