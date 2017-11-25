@@ -23,7 +23,7 @@
 # 4. gulp(掌握-)
     功能与grunt类似
     拥有更多的插件, 打包速度更快
-    配置文件名为: gruntfile.js
+    配置文件名为: gulpfile.js
     可以实现live-reload
     gulp对象常用API:
         gulp.task()
