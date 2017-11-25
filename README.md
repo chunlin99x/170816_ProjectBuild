@@ -23,13 +23,13 @@
 # 4. gulp(掌握-)
     功能与grunt类似
     拥有更多的插件, 打包速度更快
-    配置文件名为: gruntfile.js
-    可以实现live-reload
+    配置文件名为: gulpfile.js
+    可以实现live-reload(以live-rebuild为基础)
     gulp对象常用API:
-        gulp.task()
-        gulp.src()
-        gulp.dest()
-        gulp.watch()
+        gulp.task(): 定义构建任务
+        gulp.src(): 读取指定路径的源文件
+        gulp.dest(): 生成文件到指定目录
+        gulp.watch(): 监视指定文件及相应处理任务
     常用插件:
         gulp-concat : 合并文件(js/css)
         gulp-uglify : 压缩js文件
@@ -48,7 +48,7 @@
     
 ## 2). webpack的4个核心概念
     Entry：入口，Webpack进行打包的起始点(文件)
-    Output：出口，webpack编译打包生成的bundle(文件)
+    Output：出口，webpack编译打包生成的JS的bundle(文件)
     Loader：模块加载(转换)器，将非js模块包装成webpack能理解的js模块
     Plugin：插件，在 Webpack 构建流程中的特定时机插入具有特定功能的代码
     
@@ -110,7 +110,7 @@
     }
 
 ## 4). 实现live-reload
-    npm install webpack-dev-server
+    npm install webpack-dev-server   // 内存中打包
     "scripts": {
       "dev": "webpack-dev-server",
     }
