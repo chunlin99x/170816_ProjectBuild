@@ -176,12 +176,14 @@
     2). 添加打包命令配置: package.json
         "scripts": {
           "build": "webpack",
+          "server": "serve dist"
         }
 
 # 5). 打包发布运行项目  
     npm run build
     npm install -g serve
-    serve dist
+    npm run server
+    访问: http://localhost:5000
 
 # 4. 实现live-reload
 ## 1). 下载依赖模块
